@@ -1,0 +1,102 @@
+.main-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    margin-top: 5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-navbar a {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.main-navbar a:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.main-navbar a svg {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+}
+
+.main-navbar a.flight {
+    order: 1;
+}
+
+.main-navbar a.train {
+    order: 2;
+}
+
+.main-navbar a.buses {
+    order: 3;
+}
+
+.main-navbar a.cabs {
+    order: 4;
+}
+
+.main-navbar a.hotel {
+    order: 5;
+}
+
+.main-navbar a.villas {
+    order: 6;
+}
+
+.main-navbar a.holidaypackages {
+    order: 7;
+}
+
+.main-navbar a.tour {
+    order: 8;
+}
+
+.main-navbar a.cruise {
+    order: 9;
+}
+
+.main-navbar a.visa {
+    order: 10;
+}
+
+.main-navbar a.fcc {
+    order: 11;
+}
+
+.main-navbar a.travelinsurance {
+    order: 12;
+}
+
+@media (max-width: 768px) {
+    .main-navbar {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .main-navbar a {
+        padding: 6px 8px;
+        font-size: 0.85rem;
+    }
+
+    .main-navbar a svg {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,63 @@
+
+.flight-container {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 97%;
+    height: 70vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    margin-top: -3em;
+}
+
+.flight-block {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    width: 53%; 
+}
+.change{
+    font-size: 20px;
+    margin-top: 5.8em;
+    margin-left: -18em;
+}
+
+.selected-city {
+    margin-top: -1.5em;
+    margin-left: 1.2em;
+}
+.Starting-point {
+    margin: 0 2%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.selected-city .sub-text {
+    font-size: 14px;
+    color: gray;
+    margin-top: 2px;
+}
+
+
+.Starting-point {
+    margin: 3em 2%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.label-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-left: 1em;
+    display: block;
+}

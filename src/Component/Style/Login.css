@@ -1,0 +1,105 @@
+/* Login.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  /* background: linear-gradient(135deg, #667eea, #764ba2); */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 380px;   /* thoda slim signup se */
+}
+
+.wrap h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  border-color: #667eea;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+button {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  background: #667eea;
+  color: #fff;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #5a67d8;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #667eea;
+  color: #667eea;
+}
+
+.btn-ghost:hover {
+  background: #667eea;
+  color: #fff;
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.small a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.small a:hover {
+  text-decoration: underline;
+}
