@@ -1,14 +1,16 @@
 .flight-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     padding: 20px;
     max-width: 97%;
-    margin: -4em auto 0 auto;
+    margin-top: -4em;  /* ✅ desktop ke liye sahi hai */
+    height: 65vh;
     background-color: #f8f9fa;
     border-radius: 12px;
+    margin-left: 1.3em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -16,13 +18,14 @@
     display: flex;
     flex-direction: column;
     min-width: 140px;
+    margin-top: -3em;  /* ✅ desktop ke liye */
     flex: 1 1 120px;
 }
 
 .label-text {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: #333;
 }
 
@@ -30,7 +33,7 @@
     color: #000000;
     margin-top: 4px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .Starting-point {
@@ -45,7 +48,7 @@
 
 .selected-city {
     margin-top: 4px;
-    font-size: 28px;
+    font-size: 34px;
 }
 
 .selected-city .sub-text {
@@ -54,65 +57,56 @@
 }
 
 .change {
-    font-size: 24px;
-    margin: 0 12px;
+    font-size: 28px;
+    margin: 0 10px;
     cursor: pointer;
     color: #007bff;
     flex-shrink: 0;
-    align-self: center;
 }
 
 .departure-container {
     display: flex;
+    margin-top: -5.5em;  /* ✅ desktop ke liye */
     flex-direction: column;
-    min-width: 140px;
+    min-width: 100px;
     flex: 1 1 120px;
 }
 
 .departure-btn {
-    padding: 10px;
+    padding: 10px 0px;
     color: black;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: none;
+    background-color: #f8f9fa;
     cursor: pointer;
     font-size: 14px;
     text-align: center;
-    border-radius: 8px;
     transition: background-color 0.2s ease;
 }
 
-.departure-btn:hover {
-    background-color: #eee;
-}
-
-/* ✅ Tablet & Mobile */
+/* ✅ Mobile Fix */
 @media (max-width: 768px) {
     .flight-container {
-        flex-direction: row;  /* ✅ row me rahenge */
-        flex-wrap: wrap;
-        height: auto;         /* ✅ fixed height hata diya */
-        gap: 15px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        height: auto;         /* ❌ fixed height hataya */
+        margin-top: 1em;      /* ❌ extra gap fix */
+        margin-left: 0;       /* ❌ center align */
     }
 
     .flight-block,
     .departure-container {
-        flex: 1 1 45%;   /* ✅ 2 items ek row me aa jayenge */
-        min-width: 45%;
+        min-width: 100%;
+        margin-top: 0;        /* ❌ negative margin hataya */
     }
 
     .change {
-        margin: 10px auto;
-        order: 2;  /* ✅ beech me aayega */
+        align-self: center;
+        margin: 10px 0;
     }
 }
 
 @media (max-width: 480px) {
-    .flight-block,
-    .departure-container {
-        flex: 1 1 100%;  
-        min-width: 100%;
-    }
-
     .Starting-point,
     .departure-btn {
         font-size: 13px;
@@ -120,10 +114,10 @@
     }
 
     .label-text {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .selected-city {
-        font-size: 22px;
+        font-size: 26px; /* thoda chhota mobile ke liye */
     }
 }
