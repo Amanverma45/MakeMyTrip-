@@ -1,63 +1,115 @@
-
 .flight-container {
     display: flex;
-    flex-direction: row;  
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 97%;
-    height: 70vh;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 15px;
-    margin-top: -3em;
+    max-width: 97%;
+    margin-top: -4em;
+    height: 65vh;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    margin-left: 1.3em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .flight-block {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    width: 53%; 
-}
-.change{
-    font-size: 20px;
-    margin-top: 5.8em;
-    margin-left: -18em;
-}
-
-.selected-city {
-    margin-top: -1.5em;
-    margin-left: 1.2em;
-}
-.Starting-point {
-    margin: 0 2%; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    outline: none;
-}
-
-.selected-city .sub-text {
-    font-size: 14px;
-    color: gray;
-    margin-top: 2px;
-}
-
-
-.Starting-point {
-    margin: 3em 2%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    outline: none;
+    flex-direction: column;
+    min-width: 140px;
+    margin-top: -3em;
+    flex: 1 1 120px;
 }
 
 .label-text {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.selected-date {
+    color: #000000;
+    margin-top: 4px;
     font-weight: bold;
-    margin-top: 2em;
-    margin-left: 1em;
-    display: block;
+    font-size: 20px;
+}
+
+.Starting-point {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.selected-city {
+    margin-top: 4px;
+    font-size: 34px;
+}
+
+.selected-city .sub-text {
+    font-size: 12px;
+    color: #555;
+}
+
+.change {
+    font-size: 28px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #007bff;
+    flex-shrink: 0;
+}
+
+.departure-container {
+    display: flex;
+    margin-top: -5.5em;
+    flex-direction: column;
+    min-width: 100px;
+    flex: 1 1 120px;
+}
+
+.departure-btn {
+    padding: 10px 0px;
+    color: black;
+    border: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .flight-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .change {
+        align-self: center;
+        margin: 10px 0;
+    }
+
+    .flight-block,
+    .departure-container {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .Starting-point,
+    .departure-btn {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .label-text {
+        font-size: 13px;
+    }
 }
