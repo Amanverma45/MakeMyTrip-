@@ -1,16 +1,16 @@
 .main-navbar {
     display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 8px;
-    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
     margin: 0 auto;
-    padding: 10px 0;
-    flex-wrap: wrap; /* ✅ mobile ke liye better */
+    padding: 12px 0;
+    flex-wrap: nowrap;
     background-color: #f5f5f5;
     border-radius: 15px;
     margin-top: 5em;
     border-bottom: 1px solid #ccc;
+    overflow: hidden;
 }
 
 .main-navbar a {
@@ -24,8 +24,7 @@
     font-weight: 500;
     padding: 10px;
     transition: all 0.3s ease;
-    min-width: 80px; /* ✅ icons ke liye fixed block */
-    flex: 1 1 auto;  /* ✅ adjust ho jaye */
+    flex: 1 1 auto;
 }
 
 .main-navbar a:hover {
@@ -34,25 +33,28 @@
 }
 
 .main-navbar a svg {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 4px;
 }
 
-/* ✅ Mobile Responsive */
+/* ✅ Mobile responsive */
 @media (max-width: 768px) {
     .main-navbar {
-        flex-wrap: wrap;   /* ✅ wrap ho jaye mobile me */
-        justify-content: space-around;
-        overflow-x: hidden;
+        overflow-x: auto;
+        /* ✅ scroll ho jaye mobile me */
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
     }
 
     .main-navbar a {
-        min-width: 70px;
-        font-size: 0.8rem;
-        padding: 8px;
+        flex: 0 0 auto;
+        /* ✅ har item apni jagah rakhe */
+        min-width: 80px;
+        font-size: 0.85rem;
+        padding: 8px 4px;
     }
 
     .main-navbar a svg {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
