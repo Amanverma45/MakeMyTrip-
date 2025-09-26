@@ -38,30 +38,38 @@
 
 @media (max-width: 768px) {
     .main-navbar {
-        overflow-x: auto; /* Horizontal scroll for small screens */
-        justify-content: flex-start;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-        padding: 10px 0; /* Slightly reduced padding for mobile */
+        flex-wrap: wrap;
+        /* items line break karenge */
+        justify-content: center;
+        padding: 8px;
     }
 
     .main-navbar a {
-        flex: 0 0 auto; /* Prevent shrinking */
-        min-width: 90px; /* Thoda wide for touch */
-        font-size: 0.9rem; /* Slightly bigger text for readability */
-        padding: 8px 6px; /* Adjust spacing around icons/text */
+        flex: 1 1 33%;
+        /* har row me 3 icons */
+        padding: 12px 5px;
+        font-size: 0.85rem;
     }
 
     .main-navbar a svg {
-        font-size: 1.4rem; /* Slightly bigger icons */
-        margin-bottom: 6px; /* More space between icon and text */
+        font-size: 1.4rem;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-navbar {
+    margin-top: 5em;
+    width: 90vw;
+}
+    .main-navbar a {
+        flex: 1 1 26%;
+        margin-top: 2em;
+        padding: 0px 5px;
+        font-size: 0.8rem;
     }
 
-    /* Optional: hide scrollbar but still scrollable */
-    .main-navbar::-webkit-scrollbar {
-        display: none;
-    }
-    .main-navbar {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+    .main-navbar a svg {
+        font-size: 1.2rem;
     }
 }

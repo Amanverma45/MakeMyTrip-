@@ -4,13 +4,12 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    padding: 20px;
-    max-width: 97%;
-    margin-top: -4em;  /* ✅ desktop ke liye sahi hai */
+    padding: 145px;
+    max-width: 99vw;
+    margin-top: -4em;
     height: 65vh;
     background-color: #f8f9fa;
     border-radius: 12px;
-    margin-left: 1.3em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -18,7 +17,7 @@
     display: flex;
     flex-direction: column;
     min-width: 140px;
-    margin-top: -3em;  /* ✅ desktop ke liye */
+    margin-top: -3em;
     flex: 1 1 120px;
 }
 
@@ -26,7 +25,7 @@
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 8px;
-    color: #333;
+        color: aqua;
 }
 
 .selected-date {
@@ -66,7 +65,7 @@
 
 .departure-container {
     display: flex;
-    margin-top: -5.5em;  /* ✅ desktop ke liye */
+    margin-top: -5.5em;
     flex-direction: column;
     min-width: 100px;
     flex: 1 1 120px;
@@ -83,21 +82,20 @@
     transition: background-color 0.2s ease;
 }
 
-/* ✅ Mobile Fix */
 @media (max-width: 768px) {
     .flight-container {
         flex-direction: column;
         align-items: stretch;
         gap: 12px;
-        height: auto;         /* ❌ fixed height hataya */
-        margin-top: 1em;      /* ❌ extra gap fix */
-        margin-left: 0;       /* ❌ center align */
+        height: auto;
+        margin-top: 1em;
+        margin-left: 0;
     }
 
     .flight-block,
     .departure-container {
         min-width: 100%;
-        margin-top: 0;        /* ❌ negative margin hataya */
+        margin-top: 0;
     }
 
     .change {
@@ -107,17 +105,30 @@
 }
 
 @media (max-width: 480px) {
-    .Starting-point,
-    .departure-btn {
-        font-size: 13px;
-        padding: 8px 10px;
+    .flight-container {
+        margin-top: -5em;
+        width: 99vw;
     }
 
+
+    .Starting-point,
+    .departure-btn {
+        font-size: 14px;
+        padding: 17px 12px;
+        width: 75vw;
+        margin-left: -5em;
+    }
+    .departure-btn {
+    margin-top: 4em;
+}
+
+
     .label-text {
-        font-size: 13px;
+        font-size: 25px;
+        color: aqua;
     }
 
     .selected-city {
-        font-size: 26px; /* thoda chhota mobile ke liye */
+        font-size: 26px;
     }
 }
