@@ -2,9 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
-    padding: 145px;
+    align-content: end;
+    justify-content: left;
+    gap: 15px;
+    padding: 30px;
     max-width: 99vw;
     margin-top: -4em;
     height: 65vh;
@@ -16,7 +17,7 @@
 .flight-block {
     display: flex;
     flex-direction: column;
-    min-width: 140px;
+    min-width: 200px;
     margin-top: -3em;
     flex: 1 1 120px;
 }
@@ -25,7 +26,7 @@
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 8px;
-        color: aqua;
+    color: aqua;
 }
 
 .selected-date {
@@ -65,9 +66,9 @@
 
 .departure-container {
     display: flex;
-    margin-top: -5.5em;
+    margin-top: -3.5em;
     flex-direction: column;
-    min-width: 100px;
+    min-width: 200px;
     flex: 1 1 120px;
 }
 
@@ -78,9 +79,286 @@
     background-color: #f8f9fa;
     cursor: pointer;
     font-size: 14px;
+    margin-bottom: 2em;
     text-align: center;
     transition: background-color 0.2s ease;
 }
+
+.special-fare {
+    display: grid;
+}
+
+.special-fare h1 {
+    background-color: aqua;
+    color: white;
+    border-radius: 5px;
+    width: 10vw;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Regular  */
+
+.Regular-fares {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 4px;
+    width: 9vw;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Regular-fares:hover {
+    background-color: #eef6ff;
+}
+
+.Regular-fares input[type="radio"] {
+    accent-color: #007bff;
+    width: 18px;
+    height: 18px;
+}
+
+.Regular-fares strong {
+    color: #333;
+    font-size: 14px;
+}
+
+.Regular-fares strong:hover {
+    color: #007bff;
+    font-size: 16px;
+}
+
+.Regular-fares p {
+    color: #666;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Student  */
+
+.student-fares {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 4px;
+    width: 15vw;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.student-fares:hover {
+    background-color: #eef6ff;
+}
+
+.student-fares input[type="radio"] {
+    margin-right: 8px;
+    font-size: 12px;
+    accent-color: #007bff;
+    width: 15px;
+    height: 15px;
+}
+
+.student-fares strong {
+    color: #333;
+    font-size: 16px;
+}
+
+.student-fares strong:hover {
+    color: #007bff;
+}
+
+.student-fares p {
+    color: #666;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Senior  */
+
+.senior-fares {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 4px;
+    width: 15vw;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.senior-fares:hover {
+    background-color: #00234a;
+}
+
+.senior-fares input[type="radio"] {
+    margin-right: 8px;
+    font-size: 12px;
+    accent-color: #007bff;
+    width: 15px;
+    height: 15px;
+}
+
+.senior-fares strong {
+    color: #333;
+}
+
+.senior-fares strong:hover {
+    color: #007bff;
+    font-size: 16px;
+}
+
+.senior-fares p {
+    color: #666;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* cheakbox  */
+
+.checkbox-card {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    gap: 10px;
+}
+
+.checkbox-card:hover {
+    background-color: #eef6ff;
+    border-color: #007bff;
+}
+
+.checkbox-card input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #007bff;
+}
+
+.checkbox-card .checkbox-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-card .checkbox-text strong {
+    font-size: 15px;
+    color: #333;
+}
+
+.checkbox-card .checkbox-text p {
+    font-size: 12px;
+    color: #666;
+    margin: 3px 0 0 5px;
+}
+
+/* view details  */
+
+.views {
+    position: relative;
+}
+
+.views button {
+    color: #007bff;
+    border: none;
+    margin-top: 0.3em;
+    width: 9vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.view-details-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+.view-details-container h1 {
+    display: flex;
+    gap: 0.5em;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.view-details-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.view-details-container h5 {
+    font-size: 14px;
+    color: #555;
+}
+
+.zero {
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #007bff;
+    font-size: 30px;
+    background-color: #490457;
+}
+
+.tick {
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #007bff;
+    background-color: #889cb0;
+}
+
+.ok-btn {
+    padding: 8px 16px;
+    background-color: #cec4c4;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    align-items: end;
+    justify-content: end;
+    align-content: end;
+    margin: 20px auto 0;
+    padding: 8px 16px;
+    border-radius: 6px;
+
+}
+
+.ok-btn button {
+    margin-left: 22px;
+
+}
+
+.ok-btn:hover {
+    background-color: #44a8d2;
+}
+
 
 @media (max-width: 768px) {
     .flight-container {
@@ -110,7 +388,6 @@
         width: 99vw;
     }
 
-
     .Starting-point,
     .departure-btn {
         font-size: 14px;
@@ -118,10 +395,10 @@
         width: 75vw;
         margin-left: -5em;
     }
-    .departure-btn {
-    margin-top: 4em;
-}
 
+    .departure-btn {
+        margin-top: 4em;
+    }
 
     .label-text {
         font-size: 25px;

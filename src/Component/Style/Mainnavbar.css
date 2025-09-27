@@ -1,9 +1,10 @@
 .main-navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 97%;
+    width: 95%;
     margin: 0 auto;
+    margin-top: 5em;
     padding: 12px 0;
     flex-wrap: nowrap;
     background-color: #f5f5f5;
