@@ -26,7 +26,7 @@
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 8px;
-    color: aqua;
+    color: #0024ff;
 }
 
 .selected-date {
@@ -72,6 +72,13 @@
     flex: 1 1 120px;
 }
 
+.react-datepicker-popper {
+    z-index: 1;
+    margin-top: -3em;
+    margin-left: 2.1em;
+    line-height: 0;
+}
+
 .departure-btn {
     padding: 10px 0px;
     color: black;
@@ -114,7 +121,7 @@
 }
 
 .Regular-fares:hover {
-    background-color: #eef6ff;
+    background-color: #00234a;
 }
 
 .Regular-fares input[type="radio"] {
@@ -157,7 +164,7 @@
 }
 
 .student-fares:hover {
-    background-color: #eef6ff;
+    background-color: #00234a;
 }
 
 .student-fares input[type="radio"] {
@@ -385,7 +392,7 @@
 @media (max-width: 480px) {
     .flight-container {
         margin-top: -5em;
-        width: 99vw;
+        width: 97vw;
     }
 
     .Starting-point,
@@ -393,19 +400,50 @@
         font-size: 14px;
         padding: 17px 12px;
         width: 75vw;
-        margin-left: -5em;
-    }
-
-    .departure-btn {
-        margin-top: 4em;
     }
 
     .label-text {
+        margin-top: 3em;
         font-size: 25px;
-        color: aqua;
+        color: #0024ff;
     }
 
     .selected-city {
         font-size: 26px;
+    }
+
+    .special-fare h1 {
+        width: 34vw;
+    }
+
+    .Regular-fares {
+        width: 45vw;
+    }
+
+    .student-fares {
+        width: 45vw;
+    }
+
+    .senior-fares {
+        width: 45vw;
+    }
+
+    .checkbox-card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        justify-content: end;
+        margin-right: -2em;
+    }
+
+    .views button {
+        margin-top: 0.3em;
+        width: 26vw;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .view-details-container {
+        width: 90%;
     }
 }
