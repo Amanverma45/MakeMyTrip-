@@ -166,7 +166,7 @@ const Flight = () => {
             <h5>
               <TiTick className='tick'/>  Instant full fare refund. <br />
               <TiTick className='tick'/>  Hassle free online process.<br />
-              <TiTick className='tick'/>  Cancel for any reason. No questions asked.<br />
+              <TiTick className='tick'/>  Cancel for any reason. No questions    asked.<br />
               <TiTick className='tick'/>  Avoid heavy cancellation penalties.<br /> <br /><br />
               <b>If you select this option, Zero Cancellation will be added to all your bookings. You can remove the selection easily at any point of time.</b><br /><br />
               Zero cancellation is based on availability and may vary depending on the specific itinerary selected. It is subject to change based on demand and operational reasons.
