@@ -425,12 +425,12 @@
     }
 
     .senior-fares {
-        width: 48vw;
+        width: 50vw;
     }
 
     .checkbox-card {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         width: 90vw;
         justify-content: end;
         margin-right: -2em;
