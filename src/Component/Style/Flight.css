@@ -429,7 +429,7 @@
     }
 
     .checkbox-card {
-        display: flex;
+        display: grid;
         flex-wrap: nowrap;
         width: 90vw;
         justify-content: end;
@@ -438,7 +438,7 @@
 
     .views button {
         margin-top: 0.3em;
-        width: 26vw;
+        width: 30vw;
         cursor: pointer;
         transition: 0.3s ease;
     }
