@@ -7,7 +7,6 @@
 }
 
 body {
-  /* background: linear-gradient(135deg, #667eea, #764ba2); */
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,7 +19,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   width: 100%;
-  max-width: 380px;   /* thoda slim signup se */
+  max-width: 380px; 
 }
 
 .wrap h2 {

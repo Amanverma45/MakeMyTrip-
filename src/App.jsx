@@ -26,14 +26,14 @@ const App = () => {
         <Route path="/login" element={<Login />} />
 
        
-        <Route path="/flight" element={<Flight />} />
-        <Route path="/hotel" element={<Hotel />} />
+        <Route path="/flights" element={<Flight />} />
+        <Route path="/hotels" element={<Hotel />} />
         <Route path="/villas" element={<Villas />} />
         <Route path="/holidaypackages" element={<Holidaypackage />} />
-        <Route path="/train" element={<Train />} />
+        <Route path="/trains" element={<Train />} />
         <Route path="/buses" element={<Buses />} />
         <Route path="/cabs" element={<Cabs />} />
-        <Route path="/tour" element={<Tour />} />
+        <Route path="/tours" element={<Tour />} />
         <Route path="/visa" element={<Visa />} />
         <Route path="/cruise" element={<Cruise />} />
         <Route path="/fcc" element={<FCC />} />

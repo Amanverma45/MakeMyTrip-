@@ -27,7 +27,7 @@ const Flight = () => {
 
   const ReturnButton = forwardRef(({ value }, ref) => (
     <button
-      className="departure-btn"
+      className="departure-btn1"
       onClick={() => setIsReturnOpen(!isReturnOpen)}
       ref={ref}
     >
@@ -40,7 +40,7 @@ const Flight = () => {
     <div className='flight-container'>
 
       <div className='flight-block'>
-        <label className="label-text">From</label>
+        <label className="label-text-from">From</label>
         <select
           className='Starting-point'
           value={fromCity}
@@ -66,7 +66,7 @@ const Flight = () => {
       <MdOutlineChangeCircle className='change' />
 
       <div className='flight-block'>
-        <label className="label-text">To</label>
+        <label className="label-text-to">To</label>
         <select
           className='Starting-point'
           value={toCity}
@@ -90,7 +90,7 @@ const Flight = () => {
       </div>
 
       <div className="departure-container">
-        <label className="label-text">Departure</label>
+        <label className="label-text-departure">Departure</label>
         <DatePicker
           selected={departureDate}
           onChange={(date) => {
@@ -106,7 +106,7 @@ const Flight = () => {
       </div>
 
       <div className="departure-container">
-        <label className="label-text">Return</label>
+        <label className="label-text-return">Return</label>
         <DatePicker
           selected={returnDate}
           onChange={(date) => {
@@ -121,7 +121,7 @@ const Flight = () => {
         {returnDate && <div className="selected-date">{returnDate.toDateString()}</div>}
       </div>
       <div className="departure-container">
-        <label className="label-text">Travellers & Class</label>
+        <label className="label-text-traveller-class">Travellers & Class</label>
       </div>
       <div className='special-fare'>
         <h4>Select a special fare</h4>
@@ -161,24 +161,27 @@ const Flight = () => {
 
         {showDetails && (
           <div className="view-details-container">
-            <h1><SiOpenzeppelin className='zero'/> Zero Cancellation</h1>
+            <h1><SiOpenzeppelin className='zero' /> Zero Cancellation</h1>
             <h3>Starting at only ₹ 149 /traveller</h3>
             <h5>
-              <TiTick className='tick'/>  Instant full fare refund. <br />
-              <TiTick className='tick'/>  Hassle free online process.<br />
-              <TiTick className='tick'/>  Cancel for any reason. No questions    asked.<br />
-              <TiTick className='tick'/>  Avoid heavy cancellation penalties.<br /> <br /><br />
+              <TiTick className='tick' />  Instant full fare refund. <br />
+              <TiTick className='tick' />  Hassle free online process.<br />
+              <TiTick className='tick' />  Cancel for any reason. No questions    asked.<br />
+              <TiTick className='tick' />  Avoid heavy cancellation penalties.<br /> <br /><br />
               <b>If you select this option, Zero Cancellation will be added to all your bookings. You can remove the selection easily at any point of time.</b><br /><br />
               Zero cancellation is based on availability and may vary depending on the specific itinerary selected. It is subject to change based on demand and operational reasons.
             </h5>
             <button
-            className="ok-btn"
-            onClick={() => setShowDetails(false)}
-          >
-            OK, Got it
-          </button>
+              className="ok-btn"
+              onClick={() => setShowDetails(false)}
+            >
+              OK, Got it
+            </button>
           </div>
         )}
+      </div>
+      <div className='search'>
+        <button>SEARCH</button>
       </div>
     </div>
   );

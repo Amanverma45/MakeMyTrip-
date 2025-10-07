@@ -14,14 +14,14 @@ import './Style/Mainnavbar.css'
 const Mainnavbar = () => {
   return (
     <div className="main-navbar">
-      <Link className='flight' to="/flight"><SlPlane />Flight</Link>
-      <Link className='hotel' to="/hotel"><FaHotel />Hotel</Link>
+      <Link className='flight' to="/flights"><SlPlane />Flights</Link>
+      <Link className='hotel' to="/hotels"><FaHotel />Hotels</Link>
       <Link className='villas' to="/villas"><FaHome />Homestays & Villas</Link>
       <Link className='holidaypackages' to="/holidaypackages"><FaUmbrella />Holiday Packages</Link>
-      <Link className='train' to="/train"><WiTrain />Train</Link>
+      <Link className='train' to="/trains"><WiTrain />Trains</Link>
       <Link className='buses' to="/buses"><GrBus />Buses</Link>
       <Link className='cabs' to="/cabs"><FaCar />Cabs</Link>
-      <Link className='tour' to="/tour"><GiAirBalloon />Tour & attraction</Link>
+      <Link className='tour' to="/tours"><GiAirBalloon />Tours & attractions</Link>
       <Link className='visa' to="/visa"><SiVisa />Visa</Link>
       <Link className='cruise' to="/cruise"><GiFishingBoat />Cruise</Link>
       <Link className='fcc' to="/fcc"><FcCurrencyExchange />Forex card & currency</Link>
