@@ -377,6 +377,7 @@
   .click.button {
   width: 5vw;
 }
+
 .click.button > button {
   margin-left: -20em;
 }
