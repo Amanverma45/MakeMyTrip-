@@ -6,7 +6,8 @@
     justify-content: left;
     gap: 15px;
     padding: 30px;
-    height: 55vh;
+    height: auto;
+    min-height: 55vh;
     margin-top: -4em;
     max-width: 99vw;
     background-color: #f8f9fa;

@@ -1,5 +1,5 @@
 import React, { useState, forwardRef } from 'react';
-import './Style/hotel.css';
+import './Style/Hotel.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FaAngleDown } from "react-icons/fa";

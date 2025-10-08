@@ -6,9 +6,11 @@
     justify-content: left;
     gap: 7px;
     padding: 30px;
-    max-width: 99vw;
+    max-width: 95vw;
     margin-top: -4em;
-    height: 65vh;
+    height: auto ;
+    min-height: 65vh;
+    /* overflow-y: auto; */
     background-color: #f8f9fa;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -16,6 +18,7 @@
 
 .flight-block {
     display: flex;
+    width: 80px;
     flex-direction: column;
     min-width: 200px;
     margin-top: -3em;
@@ -122,6 +125,7 @@
 
 .special-fare {
     display: grid;
+    margin-left: 0.5em;
 }
 
 .special-fare h1 {
@@ -445,164 +449,82 @@
 
 @media (max-width: 1024px) {
     .flight-container {
-        margin-top: -3em;
+        width: 100%;
+        min-height: 75vh;
         display: flex;
         flex-wrap: wrap;
-        width: 97vw;
-        height: 75vh;
-        margin-left: 1em;
+        justify-content: space-between; /* Spread items */
+        margin: 0;
+        padding-bottom: 4em;
+        overflow-y: auto;
+    }
+
+    .flight-block,
+    .departure-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em; /* spacing between items */
+        margin-top: 2em;
     }
 
     .Starting-point,
-    .departure-btn {
+    .departure-btn,
+    .departure-btn1,
+    .search button,
+    .selected-city {
+        flex: 1 1 48%; /* Grow 1, shrink 1, basis 48% of container */
+        min-width: 200px; /* Minimum width so it doesn’t shrink too much */
         font-size: 16px;
-        width: 16vw;
     }
 
-    .flight-block {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .departure-container {
-        margin-top: 2em;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .label-text-from {
+    .label-text-from,
+    .label-text-to,
+    .label-text-departure,
+    .label-text-return,
+    .label-text-traveller-class {
+        flex: 1 1 48%;
         font-size: 32px;
         font-weight: 500;
-        margin-top: 78px;
         color: #0024ff;
-    }
-
-    .label-text-to {
-        font-size: 32px;
-        font-weight: 500;
-        margin-top: 78px;
-        color: #0024ff;
+        margin: 0.5em 0;
+        min-width: 200px;
     }
 
     .react-datepicker {
+        flex: 1 1 48%;
+        min-width: 200px;
         font-family: "Helvetica Neue", helvetica, arial, sans-serif;
         font-size: 0.8rem;
         background-color: #fff;
         color: #000;
         border: 1px solid #aeaeae;
         border-radius: 0.3rem;
-        display: inline-block;
-        position: relative;
         line-height: initial;
-        margin-top: -2.5em;
+        margin-top: 0;
     }
 
-    .label-text-departure {
-        font-size: 32px;
-        font-weight: 500;
-        margin-bottom: 8px;
-        color: #0024ff;
+    .special-fare h1,
+    .special-fare h4,
+    .Regular-fares,
+    .student-fares,
+    .senior-fares,
+    .checkbox-card,
+    .checkbox-text,
+    .views button,
+    .view-details-container {
+        flex: 1 1 48%;
+        min-width: 200px;
+        margin: 0.5em 0;
     }
 
-    .label-text-return {
-        font-size: 32px;
-        font-weight: 500;
-        margin-left: 4em;
-        margin-top: 0em;
-        color: #0024ff;
-    }
-
-    .label-text-traveller-class {
-        font-size: 32px;
-        font-weight: 500;
-        margin-bottom: 8px;
-        color: #0024ff;
-        width: 15em;
-    }
-
-    .departure-btn {
-        margin-top: -2em;
-    }
-
-    .departure-btn1 {
-        margin-left: 9em;
-    }
-
-    .selected-city {
-        font-size: 28px;
-    }
-
-    .special-fare h1 {
-        width: 18vw;
-    }
-
-    .special-fare h4 {
-        width: 46vw;
-    }
-
-    .Regular-fares {
-        width: 45vw;
-    }
-
-    .Regular-fares:hover {
-        background-color: #44a8d2;
-    }
-
-    .student-fares {
-        width: 45vw;
-    }
-
-    .student-fares:hover {
-        background-color: #44a8d2;
-    }
-
-    .senior-fares {
-        width: 45vw;
-    }
-
+    .Regular-fares:hover,
+    .student-fares:hover,
     .senior-fares:hover {
         background-color: #44a8d2;
     }
-
-    .checkbox-card {
-        display: flex;
-        flex-wrap: wrap;
-        width: 90vw;
-        gap: 10px;
-    }
-
-    .checkbox-text {
-        flex-wrap: wrap;
-        width: 85vw;
-    }
-
-    .views button {
-        margin-top: 0.5em;
-        width: 25vw;
-        cursor: pointer;
-        transition: 0.3s ease;
-    }
-
-    .view-details-container {
-        width: 85%;
-        margin-left: -1em;
-    }
-
-    .special-fare h1 {
-        margin-top: 1em;
-    }
-
-    .search {
-        /* margin-top: 1em; */
-        /* width: 15%; */
-        /* height: 5vh; */
-    }
-
-    .search button {
-        margin-left: 13em;
-        margin-top: 7em;
-    }
 }
+
 
 
 @media (max-width: 768px) {
