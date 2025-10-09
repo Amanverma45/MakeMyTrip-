@@ -11,7 +11,7 @@ const Flight = () => {
   const [fromCity, setFromCity] = useState("Mumbai, India");
   const [toCity, setToCity] = useState("Pune, India");
   const [departureDate, setDepartureDate] = useState(null);
-  const [returnDate, setReturnDate] = useState(null);
+  const [returnDate, setReturnDate] =  useState(null);
   const [isDepartureOpen, setIsDepartureOpen] = useState(false);
   const [isReturnOpen, setIsReturnOpen] = useState(false);
 
@@ -27,7 +27,7 @@ const Flight = () => {
 
   const ReturnButton = forwardRef(({ value }, ref) => (
     <button
-      className="departure-btn1"
+      className="return-btn"
       onClick={() => setIsReturnOpen(!isReturnOpen)}
       ref={ref}
     >
@@ -102,7 +102,7 @@ const Flight = () => {
           dateFormat="dd MMM yyyy"
           customInput={<DepartureButton />}
         />
-        {departureDate && <div className="selected-date">{departureDate.toDateString()}</div>}
+        {departureDate && <div className="selected-date-departure">{departureDate.toDateString()}</div>}
       </div>
 
       <div className="departure-container">
@@ -118,7 +118,7 @@ const Flight = () => {
           dateFormat="dd MMM yyyy"
           customInput={<ReturnButton />}
         />
-        {returnDate && <div className="selected-date">{returnDate.toDateString()}</div>}
+        {returnDate && <div className="selected-date-return">{returnDate.toDateString()}</div>}
       </div>
       <div className="departure-container">
         <label className="label-text-traveller-class">Travellers & Class</label>

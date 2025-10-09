@@ -6,23 +6,23 @@
     justify-content: left;
     gap: 7px;
     padding: 30px;
-    max-width: 95vw;
+    max-width: 97vw;
     margin-top: -4em;
-    height: auto ;
+    height: auto;
     min-height: 65vh;
-    /* overflow-y: auto; */
     background-color: #f8f9fa;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .flight-block {
+    border: 2px solid rgb(230, 226, 226);
     display: flex;
-    width: 80px;
     flex-direction: column;
-    min-width: 200px;
-    margin-top: -3em;
-    flex: 1 1 120px;
+    min-width: 170px;
+    margin-top: 3em;
+    flex: 1 1 100px;
+    border-radius: 5px;
 }
 
 .label-text-from {
@@ -42,31 +42,29 @@
 .label-text-departure {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin: 10px;
+    margin-top: -3em;
     color: #0024ff;
+    margin-left: -8em;
 }
 
 .label-text-return {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 8px;
-    margin-top: -4em;
+    margin-top: -2em;
     color: #0024ff;
+    margin-left: -10em;
 }
 
 .label-text-traveller-class {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     color: #0024ff;
+    margin-left: -6em;
 }
 
-.selected-date {
-    color: #000000;
-    margin-top: 4px;
-    font-weight: bold;
-    font-size: 20px;
-}
+/* from part  */
 
 .Starting-point {
     padding: 10px 12px;
@@ -78,6 +76,8 @@
     width: 100%;
 }
 
+/* Both from and to  */
+
 .selected-city {
     margin-top: 4px;
     font-size: 34px;
@@ -88,21 +88,49 @@
     color: #555;
 }
 
+/* Selected date of return  */
+
+.selected-date-return {
+    color: #372c2c;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: -5em;
+}
+
+/* Selected date of daparture  */
+
+.selected-date-departure {
+    color: #372c2c;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: -5em;
+}
+
+/* for change From to To */
+
 .change {
     font-size: 28px;
-    margin: 0 10px;
     cursor: pointer;
     color: #007bff;
     flex-shrink: 0;
 }
 
+/* Departure and return full div  */
+
 .departure-container {
+    border: 2px solid rgb(230, 226, 226);
     display: flex;
-    margin-top: -3.5em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 3em;
     flex-direction: column;
-    min-width: 200px;
-    flex: 1 1 120px;
+    min-width: 210px;
+    height: 23vh;
+    flex: 1 1 100px;
 }
+
+/* calender  */
 
 .react-datepicker-popper {
     z-index: 1;
@@ -111,14 +139,29 @@
     line-height: 0;
 }
 
+/* Select departure  */
+
 .departure-btn {
-    padding: 10px 0px;
+    padding: 10px 10px;
     color: black;
-    border: none;
-    background-color: #f8f9fa;
+    background-color: #eeeef0;
     cursor: pointer;
     font-size: 14px;
-    margin-bottom: 4em;
+    text-align: center;
+    margin-left: -5em;
+    transition: background-color 0.2s ease;
+}
+
+/* Select return  */
+
+.return-btn {
+    padding: 10px 10px;
+    color: black;
+    background-color: #eeeef0;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 1em;
+    margin-left: -5em;
     text-align: center;
     transition: background-color 0.2s ease;
 }
@@ -127,6 +170,8 @@
     display: grid;
     margin-left: 0.5em;
 }
+
+/* Extra savings  */
 
 .special-fare h1 {
     background-color: aqua;
@@ -446,106 +491,160 @@
     height: 5vh;
 }
 
+/* Teblet-View  */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .flight-container {
-        width: 100%;
-        min-height: 75vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; /* Spread items */
-        margin: 0;
-        padding-bottom: 4em;
-        overflow-y: auto;
+        margin-top: -3em;
+        width: 96vw;
     }
 
-    .flight-block,
-    .departure-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em; /* spacing between items */
-        margin-top: 2em;
+    .Starting-point {
+        font-size: 13px;
+        padding: 8px 12px;
+        margin-left: 1em;
+        width: 27vw;
     }
 
-    .Starting-point,
-    .departure-btn,
-    .departure-btn1,
-    .search button,
-    .selected-city {
-        flex: 1 1 48%; /* Grow 1, shrink 1, basis 48% of container */
-        min-width: 200px; /* Minimum width so it doesn’t shrink too much */
-        font-size: 16px;
+    .departure-btn {
+        font-size: 13px;
+        margin-left: -4em;
+        width: 18vw;
     }
 
-    .label-text-from,
-    .label-text-to,
-    .label-text-departure,
-    .label-text-return,
+    .return-btn {
+        font-size: 13px;
+        margin-left: -4em;
+        width: 18vw;
+    }
+
+    .label-text-from {
+        margin-left: 1em;
+        font-size: 15px;
+        color: #0024ff;
+    }
+
+    .label-text-to {
+        margin-left: 1em;
+        font-size: 15px;
+        color: #0024ff;
+    }
+
+    .label-text-return {
+        margin-top: -3em;
+        margin-left: -8em;
+        font-size: 15px;
+        color: #0024ff;
+    }
+
+    .label-text-departure {
+        margin-left: -7em;
+        font-size: 15px;
+        color: #0024ff;
+    }
+
     .label-text-traveller-class {
-        flex: 1 1 48%;
-        font-size: 32px;
+        font-size: 22px;
         font-weight: 500;
         color: #0024ff;
-        margin: 0.5em 0;
-        min-width: 200px;
+        margin-top: -1.5em;
+        font-size: 15px;
     }
 
-    .react-datepicker {
-        flex: 1 1 48%;
-        min-width: 200px;
-        font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-        font-size: 0.8rem;
-        background-color: #fff;
-        color: #000;
-        border: 1px solid #aeaeae;
-        border-radius: 0.3rem;
-        line-height: initial;
-        margin-top: 0;
+    .selected-city {
+        font-size: 24px;
+        margin-left: 1em;
     }
 
-    .special-fare h1,
-    .special-fare h4,
+    .selected-date-return {
+        font-size: 14px;
+        margin-left: -5.5em;
+
+    }
+
+    .selected-date-departure {
+        font-size: 14px;
+        margin-left: -5.5em;
+
+    }
+
+    .special-fare h1 {
+        width: 20vw;
+        margin-top: 2px;
+    }
+
+    .special-fare h4 {
+        width: 70vw;
+        /* margin-top: 7.9em; */
+    }
+
     .Regular-fares,
     .student-fares,
-    .senior-fares,
-    .checkbox-card,
-    .checkbox-text,
-    .views button,
-    .view-details-container {
-        flex: 1 1 48%;
-        min-width: 200px;
-        margin: 0.5em 0;
+    .senior-fares {
+        width: 43vw;
     }
 
-    .Regular-fares:hover,
-    .student-fares:hover,
+    .Regular-fares,
+    .student-fares,
     .senior-fares:hover {
-        background-color: #44a8d2;
+        color: white;
+    }
+
+    .checkbox-card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 85vw;
+    }
+
+    .checkbox-text {
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    .views button {
+        margin-top: 0.4em;
+        width: 35vw;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .view-details-container {
+        width: 92%;
     }
 }
-
-
+/* ______________________________________________________________________ */
 
 @media (max-width: 768px) {
     .flight-container {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         align-items: stretch;
-        gap: 12px;
         height: auto;
-        margin-top: 1em;
-        margin-left: 0;
+        margin-top: -4em;
+        margin-left: 1em;
     }
 
-    .flight-block,
+    .flight-block {
+        min-width: 40%;
+        justify-content: center;
+        align-content: center;
+        margin-top: 50px;
+        height: 155px;
+    }
+
     .departure-container {
-        min-width: 100%;
-        margin-top: 0;
+        /* min-width: 33%; */
+        justify-content: center;
+        align-content: center;
+        margin-top: 50px;
+        height: 155px;
+        border-radius: 5px;
     }
 
     .change {
-        align-self: center;
-        margin: 10px 0;
+        margin-top: 4em;
+
     }
 }
 
