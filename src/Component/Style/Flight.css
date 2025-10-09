@@ -644,17 +644,17 @@
         border-radius: 6px;
     }
     .departure-btn{
-         width: 35vw;
+        width: 40vw;
         font-size: 14px;
         padding: 10px 14px;
-        margin-left: -11em;
+        margin-left: -10em;
         border-radius: 6px;
     }
     .return-btn {
-        width: 35vw;
+        width: 40vw;
         font-size: 14px;
         padding: 10px 14px;
-        margin-left: -11em;
+        margin-left: -1em;
         border-radius: 6px;
     }
 
@@ -712,14 +712,14 @@
         margin: 0.5em auto;
     }
 
-    .checkbox-card,
+    /* .checkbox-card,
     .checkbox-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 90vw;
-    }
-
+        display: inline;
+        flex-direction: row;
+        align-items:start;
+        width: 100vw;
+    } */
+   
     .views button {
         width: 90vw;
         font-size: 15px;
