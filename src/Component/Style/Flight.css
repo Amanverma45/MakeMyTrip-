@@ -713,10 +713,10 @@
 
     .checkbox-card,
     .checkbox-text {
-        display: inline;
-        flex-direction: row;
+        display: flex;
+        /* flex-direction: row; */
         align-items:start;
-        width: 800vw;
+        width: 85vw;
     }
    
     .views button {
