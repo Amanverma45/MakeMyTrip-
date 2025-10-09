@@ -491,11 +491,16 @@
     height: 5vh;
 }
 
-/* Teblet-View  */
 
 @media screen and (max-width: 1024px) {
     .flight-container {
-        margin-top: -3em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+        height: auto;
+        margin-top: -4em;
+        margin-left: 1em;
         width: 96vw;
     }
 
@@ -503,29 +508,25 @@
         font-size: 13px;
         padding: 8px 12px;
         margin-left: 1em;
-        width: 27vw;
+        width: 23vw;
     }
 
-    .departure-btn {
-        font-size: 13px;
-        margin-left: -4em;
-        width: 18vw;
-    }
-
+    .departure-btn,
     .return-btn {
         font-size: 13px;
         margin-left: -4em;
         width: 18vw;
     }
 
-    .label-text-from {
+    .label-text-from,
+    .label-text-to {
         margin-left: 1em;
         font-size: 15px;
         color: #0024ff;
     }
 
-    .label-text-to {
-        margin-left: 1em;
+    .label-text-departure {
+        margin-left: -7em;
         font-size: 15px;
         color: #0024ff;
     }
@@ -537,18 +538,11 @@
         color: #0024ff;
     }
 
-    .label-text-departure {
-        margin-left: -7em;
-        font-size: 15px;
-        color: #0024ff;
-    }
-
     .label-text-traveller-class {
-        font-size: 22px;
+        font-size: 15px;
         font-weight: 500;
         color: #0024ff;
         margin-top: -1.5em;
-        font-size: 15px;
     }
 
     .selected-city {
@@ -556,16 +550,10 @@
         margin-left: 1em;
     }
 
-    .selected-date-return {
-        font-size: 14px;
-        margin-left: -5.5em;
-
-    }
-
+    .selected-date-return,
     .selected-date-departure {
         font-size: 14px;
         margin-left: -5.5em;
-
     }
 
     .special-fare h1 {
@@ -575,7 +563,6 @@
 
     .special-fare h4 {
         width: 70vw;
-        /* margin-top: 7.9em; */
     }
 
     .Regular-fares,
@@ -584,8 +571,8 @@
         width: 43vw;
     }
 
-    .Regular-fares,
-    .student-fares,
+    .Regular-fares:hover,
+    .student-fares:hover,
     .senior-fares:hover {
         color: white;
     }
@@ -611,105 +598,151 @@
     .view-details-container {
         width: 92%;
     }
-}
-/* ______________________________________________________________________ */
 
-@media (max-width: 768px) {
-    .flight-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: stretch;
-        height: auto;
-        margin-top: -4em;
-        margin-left: 1em;
-    }
-
-    .flight-block {
-        min-width: 40%;
+    .flight-block{
         justify-content: center;
         align-content: center;
         margin-top: 50px;
+        min-width: 35%;
         height: 155px;
+        border-radius: 5px;
     }
-
     .departure-container {
-        /* min-width: 33%; */
         justify-content: center;
         align-content: center;
         margin-top: 50px;
+        min-width: 24%;
         height: 155px;
         border-radius: 5px;
     }
 
     .change {
         margin-top: 4em;
-
     }
 }
+/* __________________________________________________________________ */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .flight-container {
-        margin-top: -5em;
-        width: 97vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        margin-top: -2em;
+        margin-left: 0;
+        padding: 0 1em;
     }
 
-    .Starting-point,
-    .departure-btn {
+    .Starting-point{
+        width: 54vw;
         font-size: 14px;
-        padding: 17px 12px;
-        width: 75vw;
+        padding: 10px 14px;
+        margin: 0.7em 0;
+        border-radius: 6px;
+    }
+    .departure-btn{
+         width: 35vw;
+        font-size: 14px;
+        padding: 10px 14px;
+        margin-left: -11em;
+        border-radius: 6px;
+    }
+    .return-btn {
+        width: 35vw;
+        font-size: 14px;
+        padding: 10px 14px;
+        margin-left: -11em;
+        border-radius: 6px;
     }
 
-    .label-text {
-        margin-top: 3em;
-        font-size: 25px;
+    .label-text-from,
+    .label-text-to,
+    
+    .label-text-traveller-class {
+        margin-left: 0.5em;
+        font-size: 16px;
         color: #0024ff;
+        margin-top: 0.5em;
+    }
+    .label-text-return{
+         margin-left: -16em;
+        font-size: 16px;
+        color: #0024ff;
+        margin-top: -0.5em;
+    }
+    .label-text-departure{
+        margin-left: -14em;
+        font-size: 16px;
+        color: #0024ff;
+        margin-top: -0.5em;
     }
 
     .selected-city {
-        font-size: 26px;
+        font-size: 20px;
+        margin-left: 0.5em;
+    }
+
+    .selected-date-return,
+    .selected-date-departure {
+        font-size: 14px;
+        margin-left: -12.7em;
+        margin-top: 1em;
     }
 
     .special-fare h1 {
-        width: 34vw;
+        width: 85vw;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 0.8em;
     }
 
-    .Regular-fares {
-        width: 50vw;
+    .special-fare h4 {
+        width: 90vw;
+        text-align: center;
+        font-size: 14px;
     }
 
-    .student-fares {
-        width: 50vw;
-    }
-
+    .Regular-fares,
+    .student-fares,
     .senior-fares {
-        width: 50vw;
+        width: 85vw;
+        margin: 0.5em auto;
     }
 
-    .checkbox-card {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 82vw;
-    }
-
+    .checkbox-card,
     .checkbox-text {
-        flex-wrap: wrap;
-        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90vw;
     }
 
     .views button {
-        margin-top: 0.3em;
-        width: 30vw;
-        cursor: pointer;
-        transition: 0.3s ease;
+        width: 90vw;
+        font-size: 15px;
+        margin-top: 0.6em;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .flight-block,
+    .departure-container {
+        width: 95%;
+        height: auto;
+        margin-top: 1.5em;
+        padding: 1em;
+        border-radius: 20px;
+    }
+
+    .change {
+        margin-top: 0em;
     }
 
     .view-details-container {
-        width: 93%;
-    }
-
-    .special-fare h1 {
-        margin-top: 1em;
+        width: 95%;
+        margin: auto;
     }
 }
