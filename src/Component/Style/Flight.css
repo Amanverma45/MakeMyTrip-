@@ -644,23 +644,22 @@
         border-radius: 6px;
     }
     .departure-btn{
-        width: 40vw;
+        width: 45vw;
         font-size: 14px;
-        padding: 10px 14px;
+        padding: 10px 0px;
         margin-left: -10em;
         border-radius: 6px;
     }
     .return-btn {
-        width: 40vw;
+        width: 45vw;
         font-size: 14px;
-        padding: 10px 14px;
+        padding: 10px 0px;
         margin-left: -1em;
         border-radius: 6px;
     }
 
     .label-text-from,
     .label-text-to,
-    
     .label-text-traveller-class {
         margin-left: 0.5em;
         font-size: 16px;
@@ -712,13 +711,13 @@
         margin: 0.5em auto;
     }
 
-    /* .checkbox-card,
+    .checkbox-card,
     .checkbox-text {
         display: inline;
         flex-direction: row;
         align-items:start;
         width: 100vw;
-    } */
+    }
    
     .views button {
         width: 90vw;
