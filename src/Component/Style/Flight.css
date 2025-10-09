@@ -716,7 +716,7 @@
         display: inline;
         flex-direction: row;
         align-items:start;
-        width: 100vw;
+        width: 800vw;
     }
    
     .views button {
