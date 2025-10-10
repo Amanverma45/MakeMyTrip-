@@ -240,7 +240,7 @@ const Hotel = () => {
             </div>
 
             {/* CheckIn */}
-            <div className="hotel-item1">
+            <div className="hotel-item2">
               <label className="label-text1">Check-In</label>
               <DatePicker
                 selected={checkinDate}
@@ -254,7 +254,7 @@ const Hotel = () => {
             </div>
 
             {/* Checkout */}
-            <div className="hotel-item1">
+            <div className="hotel-item2">
               <label className="label-text1">Check-Out</label>
               <DatePicker
                 selected={checkoutDate}
@@ -275,7 +275,7 @@ const Hotel = () => {
               </button>
 
               {showDetails && (
-                <div className="rooms-guest">
+                <div className="rooms-guest2">
                   <div className="room">
                     <h2>Room</h2>
                     <select>
