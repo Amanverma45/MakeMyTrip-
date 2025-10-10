@@ -155,6 +155,14 @@
   flex: 0 0 150px;
 }
 
+.hotel-item1-price-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgb(179, 177, 177);
+  flex: 0 0 150px;
+}
+
 .hotel-item2 {
   display: flex;
   flex-direction: column;
@@ -169,6 +177,7 @@
 }
 
 .hotel-item1:hover,
+.hotel-item1-price-card:hover,
 .hotel-item2:hover {
   background-color: #d0eeee;
 }
@@ -292,6 +301,19 @@
 }
 
 .hotel-item1 button {
+  display: flex;
+  padding: 1px 15px;
+  color: rgb(49, 43, 43);
+  background: transparent;
+  cursor: pointer;
+  margin-top: 9px;
+  width: 15vw;
+  height: 10vh;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.hotel-item1-price-card button {
   display: flex;
   padding: 1px 15px;
   color: rgb(49, 43, 43);
@@ -614,7 +636,7 @@
     color: #0077ff;
     font-weight: 600;
     margin-top: 5em;
-    margin-left: -1.4em;
+    margin-left: 0em;
     width: 30vw;
   }
 
@@ -675,6 +697,15 @@
     height: 20vh;
   }
 
+  .hotel-item1-price-card {
+    flex: 0 0 60%;
+    border-radius: 10px;
+    background-color: #e0dddd;
+    display: flex;
+    justify-content: flex-start;
+    height: 20vh;
+  }
+
   .hotelItem-of-upto-4-rooms {
     flex: 0 0 60%;
     border-radius: 10px;
@@ -693,6 +724,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 20vh;
+    margin-left: 5em;
     max-width: 60%;
   }
 
@@ -703,6 +735,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-left: 5em;
     height: 20vh;
   }
 
@@ -712,7 +745,13 @@
   }
 
   .hotel-item1 button {
-    width: 38vw;
+    width: 45vw;
+    height: 5vh;
+    font-size: 15px;
+  }
+
+  .hotel-item1-price-card button {
+    width: 45vw;
     height: 5vh;
     font-size: 15px;
   }
@@ -770,7 +809,7 @@
   }
 
   .click.button>button {
-    margin-left: -26em;
+    margin-left: -23em;
     margin-top: -1em;
     font-size: 12px;
   }
@@ -789,7 +828,7 @@
     background: transparent;
     cursor: pointer;
     margin-top: 5px;
-    width: 33vw;
+    width: 45vw;
     height: 8vh;
     margin-left: 0.5em;
     font-size: 14px;
@@ -798,8 +837,6 @@
   .searches h2 {
     margin-top: 1em;
     font-size: 13px;
-    margin-left: -14em;
-
   }
 }
 

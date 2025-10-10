@@ -178,7 +178,7 @@ const Hotel = () => {
                 <div>
                 </div>
               </div>
-              <div className='hotel-item1'>
+              <div className='hotel-item1-price-card'>
                 <button onClick={() => setPriceDetails(!priceDetails)}>
                   Price Per Night<FaAngleDown className='angle' />
                 </button>
