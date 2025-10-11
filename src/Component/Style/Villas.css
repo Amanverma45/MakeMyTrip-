@@ -1,0 +1,711 @@
+.homestays-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: end;
+    align-content: start;
+    justify-content: left;
+    gap: 15px;
+    padding: 30px;
+    height: auto;
+    min-height: 25vh;
+    margin-top: -4em;
+    max-width: 99vw;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+
+}
+
+.homestays-container h3 {
+    width: 100vw;
+    margin-top: 2em;
+    height: 5vh;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+
+}
+
+.city-checkin-checkout {
+    display: flex;
+    flex-direction: row;
+}
+
+.select-city {
+    width: 20vw;
+}
+
+.City-container {
+    border: 2px solid rgb(239, 235, 235);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 0.5em 1em;
+    width: 28vw;
+    height: 19vh;
+}
+
+.City-container h4 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.City-container select {
+    border: none;
+    margin-top: 5px;
+    font-size: 17px;
+    width: 13vw;
+}
+
+.selectedcity {
+    font-size: 24px;
+}
+
+/* chaekin */
+
+.checkin-container {
+    display: grid;
+    border: 2px solid rgb(239, 235, 235);
+    padding: 0.5em 1em;
+    width: 18vw;
+    height: 19vh;
+}
+
+.checkin-text {
+    font-size: 13px;
+}
+
+.checkin-button {
+    display: flex;
+    margin-left: -5.5px;
+    padding: 8px;
+}
+
+.faangle {
+    margin-top: 0px;
+    font-size: 19px;
+}
+
+.selected-date-checkin {
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+}
+
+.react-datepicker {
+    padding: 0;
+    margin: -18em;
+    margin-left: -8em;
+}
+
+/* Checkout  */
+
+.checkout-container {
+    display: grid;
+    border: 2px solid rgb(239, 235, 235);
+    padding: 0.5em 1em;
+    width: 18vw;
+    height: 19vh;
+}
+
+.checkout-text {
+    font-size: 13px;
+}
+
+.checkout-button {
+    display: flex;
+    margin-left: -5.5px;
+    padding: 8px;
+}
+
+.faangle {
+    margin-top: 0px;
+    font-size: 19px;
+}
+
+.selected-date-checkout {
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+}
+
+.react-datepicker {
+    padding: 0;
+    margin: -18em;
+    margin-left: -8em;
+}
+
+/* Guest */
+
+.Guest-container {
+    display: grid;
+    border: 2px solid rgb(239, 235, 235);
+    padding: 0.5em 1em;
+    width: 18vw;
+    height: 19vh;
+}
+
+.main-button {
+    background: none;
+    display: flex;
+    padding: 0.5em 1em;
+    width: 10vw;
+    height: 7vh;
+}
+
+.faangle-Guests {
+    font-size: 19px
+}
+
+.guest-choice {
+    width: 50vw;
+    height: 60vh;
+    margin-left: -20em;
+    margin-top: 3em;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.guest-choice h5 {
+    font-weight: 400;
+    color: rgb(83, 80, 80);
+    margin-left: 1em;
+}
+
+.adult-row {
+    display: flex;
+    gap: 15em;
+    text-align: left;
+    align-items: center;
+    margin: 1em;
+    width: 35vw;
+    height: 4vh;
+}
+
+.adult-row h2 {
+    font-size: 15px;
+    color: rgb(83, 80, 80);
+}
+
+.adult-row select {
+    display: flex;
+    width: 6vw;
+    height: 4vh;
+}
+
+.child-row {
+    display: flex;
+    gap: 9.7em;
+    text-align: left;
+    align-items: center;
+    margin: 1em;
+    width: 35vw;
+    height: 4vh;
+}
+
+.child-row h2 {
+    font-size: 15px;
+    color: rgb(83, 80, 80);
+}
+
+.child-row p {
+    font-size: 12px;
+    color: rgb(83, 80, 80);
+    width: 10vw;
+    font-weight: normal;
+}
+
+.child-row select {
+    display: flex;
+    width: 6vw;
+    height: 4vh;
+}
+
+.hr {
+    width: 95%;
+    margin-top: 1em;
+    margin-left: 0.7em;
+}
+
+.ageofchildren {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ageofchildren h3 {
+    border: none;
+    color: rgb(81, 79, 79);
+    width: 94%;
+    text-align: left;
+    margin-top: -1px;
+    margin-left: 1em;
+
+}
+
+/* child1  */
+
+.child1 {
+    display: flex;
+    margin: 1em;
+    width: 20vw;
+    gap: 2em;
+}
+
+.child1 h2 {
+    color: rgb(81, 79, 79);
+    font-size: 18px;
+
+}
+
+.child1 select {
+    height: 4vh;
+    width: 5vw;
+    font-weight: bold;
+    border: none;
+}
+
+/* child2  */
+
+.child2 {
+    color: rgb(81, 79, 79);
+    display: flex;
+    margin: 1em;
+    width: 20vw;
+    gap: 2em;
+
+}
+
+.child2 h2 {
+    font-size: 18px;
+
+}
+
+.child2 select {
+    height: 4vh;
+    width: 5vw;
+    font-weight: bold;
+    border: none;
+    overflow-y: scroll;
+}
+
+/* child3 */
+
+.child3 {
+    display: flex;
+    margin: 1em;
+    width: 20vw;
+    gap: 2em;
+}
+
+.child3 h2 {
+    color: rgb(81, 79, 79);
+    font-size: 18px;
+}
+
+.child3 select {
+    height: 4vh;
+    width: 5vw;
+    font-weight: bold;
+    border: none;
+    overflow-y: scroll;
+}
+
+/* child4 */
+
+.child4 {
+    display: flex;
+    margin: 1em;
+    width: 20vw;
+    gap: 2em;
+}
+
+.child4 h2 {
+    color: rgb(81, 79, 79);
+    font-size: 18px;
+
+}
+
+.child4 select {
+    height: 4vh;
+    width: 5vw;
+    font-weight: bold;
+    border: none;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 2em;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Price  */
+
+.price-container {
+    display: grid;
+    border: 2px solid rgb(239, 235, 235);
+    padding: 0.5em 1em;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 18vw;
+    height: 19vh;
+}
+
+.price-button {
+    background: none;
+    display: flex;
+    padding: 0.5em 1em;
+    width: 15vw;
+    height: 7vh;
+}
+
+.price-container select {
+    margin-left: 1em;
+    margin-top: -1em;
+    width: 9vw;
+    border: none;
+    height: 4vh;
+}
+
+.selected-price-of-HSV {
+    margin-left: 1em;
+}
+
+/* SEARCH BUTTON  */
+
+.home-stays-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 13px 60px;
+    border: none;
+    border-radius: 37px;
+    font-size: 20px;
+    cursor: pointer;
+    width: auto;
+    margin-left: 25em;
+    min-width: 63px;
+    margin-top: 0em;
+    transition: background 0.3s ease;
+}
+
+.home-stays-btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+/* 1024 teblet view  */
+
+@media (max-width: 1024px) {
+
+    .homestays-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        margin-top: -4em;
+        max-width: 100vw;
+        height: auto;
+    }
+
+    .homestays-container h3 {
+        font-size: 15px;
+        margin-top: 4em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 17px;
+        margin-top: 2em;
+        /* text-align: center; */
+        width: 80%;
+    }
+
+    /* 🔹 City box */
+    .City-container {
+        width: 80%;
+        height: 25vh;
+        padding: 1em;
+        margin-left: -5em;
+        border-radius: 12px;
+        background-color: #e7e4e4;
+    }
+
+    .city-checkin {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        gap: 1.5em;
+    }
+
+    .city-checkout {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        gap: 1.5em;
+    }
+
+    .react-datepicker {
+        float: left;
+        margin-left: 4em;
+    }
+
+    .City-container select {
+        width: 26%;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        margin-left: 157px;
+        padding: 2px 12px;
+        background-color: #efefef;
+    }
+
+    .selectedcity {
+        font-size: 24px;
+        margin-left: 277px;
+    }
+
+    /* 🔹 Checkin + Checkout */
+    .checkin-container {
+        width: 80%;
+        margin-left: 6em;
+        height: 25vh;
+        padding: 1em;
+        border-radius: 12px;
+        background-color: #e7e4e4;
+    }
+
+    .checkout-container {
+        width: 80%;
+        margin-left: -5em;
+        height: 25vh;
+        padding: 1em;
+        border-radius: 12px;
+        background-color: #e7e4e4;
+    }
+
+    .checkin-button,
+    .checkout-button {
+        width: 34%;
+        justify-content: space-between;
+        margin-left: 54px;
+    }
+
+    .selected-date-checkout {
+        font-size: 14px;
+        color: black;
+        font-weight: 600;
+        margin-left: 200px;
+    }
+
+    .selected-date-checkin {
+        font-size: 14px;
+        color: black;
+        font-weight: 600;
+        margin-left: 200px;
+    }
+
+    .react-datepicker {
+        margin: 0;
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    /* 🔹 Guest box */
+    .Guest-container {
+        width: 80%;
+        margin-left: 6em;
+        height: 25vh;
+        padding: 1em;
+        border-radius: 12px;
+        background-color: #e7e4e4;
+    }
+
+    .main-button {
+        width: 22%;
+        justify-content: space-between;
+    }
+
+    .guest-choice {
+        width: 78%;
+        height: 60vh;
+        margin-left: 8em;
+        margin-top: -11em;
+    }
+
+    .adult-row {
+        width: 90%;
+        gap: 8.3em;
+        flex-wrap: wrap;
+    }
+
+    .child-row {
+        width: 90%;
+        gap: 5em;
+        flex-wrap: wrap;
+    }
+
+    .child-row p {
+        width: auto;
+        font-size: 13px;
+    }
+
+    .child-row h2 {
+        font-size: 13px;
+        margin-top: -1em;
+        color: rgb(83, 80, 80);
+    }
+
+    .adult-row h2 {
+        font-size: 13px;
+        margin-top: -1em;
+        color: rgb(83, 80, 80);
+    }
+
+    .adult-row select {
+        display: flex;
+        width: 6vw;
+        margin-top: -1em;
+        height: 4vh;
+    }
+
+    .child-row select {
+        display: flex;
+        width: 6vw;
+        margin-top: -1em;
+        height: 4vh;
+    }
+
+    .ageofchildren h3 {
+        margin: 0;
+        margin-left: 12px;
+        text-align: left;
+    }
+
+    .child1 h2 {
+        color: rgb(81, 79, 79);
+        font-size: 12px;
+        height: 4vh;
+        margin-top: -13px;
+    }
+
+    .child2 h2 {
+        color: rgb(81, 79, 79);
+        font-size: 12px;
+        height: 4vh;
+        margin-top: -13px;
+    }
+
+    .child3 h2 {
+        color: rgb(81, 79, 79);
+        font-size: 12px;
+        height: 4vh;
+        margin-top: -2em;
+        margin-top: -27px;
+    }
+
+    .child4 h2 {
+        color: rgb(81, 79, 79);
+        font-size: 12px;
+        height: 4vh;
+        margin-top: -27px;
+    }
+
+    .child1,
+    .child2,
+    .child3,
+    .child4 {
+        width: 39%;
+        justify-content: space-between;
+        gap: 1em;
+        height: 4vh;
+
+    }
+
+    .child1 select,
+    .child2 select {
+        width: 7vw;
+        height: 4vh;
+        margin-top: -17px;
+    }
+
+    .child3 select,
+    .child4 select {
+        width: 7vw;
+        height: 4vh;
+        margin-top: -28px;
+
+    }
+
+    .btn {
+        width: 40%;
+        margin-left: 10em;
+        text-align: center;
+        margin-top: -12px;
+    }
+
+    /* 🔹 Price box */
+    .price-container {
+        width: 80%;
+        margin-left: -5em;
+        height: 25vh;
+        padding: 1em;
+        border-radius: 12px;
+        background-color: #e7e4e4;
+    }
+
+    .price-button {
+        width: 36%;
+        justify-content: space-between;
+    }
+
+    .price-container select {
+        width: 28%;
+        margin-left: 8em;
+        font-size: 15px;
+    }
+
+    .selected-price-of-HSV {
+        margin-left: 14em;
+        margin-top: 0.5em;
+    }
+
+    /* Search button  */
+    .home-stays-btn {
+        color: white;
+        padding: 8px 48px;
+        font-size: 15px;
+        margin-left: 0em;
+        min-width: 63px;
+    }
+
+    .home-stays-btn:hover {
+        background-color: #0056b3;
+    }
+
+
+}

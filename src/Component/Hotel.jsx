@@ -1,7 +1,7 @@
 import React, { useState, forwardRef } from 'react';
 import './Style/Hotel.css';
 import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import "react-datepicker/dist/react-datepicker.css"; 
 import { FaAngleDown } from "react-icons/fa";
 
 const CheckInButton = forwardRef(({ value, onClick }, ref) => (
