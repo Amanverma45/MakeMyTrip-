@@ -706,6 +706,228 @@
     .home-stays-btn:hover {
         background-color: #0056b3;
     }
+}
 
+/* MOBILE WIDTH 600PX */
+
+@media (max-width: 600px) {
+
+    .homestays-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+        margin-top: -2em;
+        width: 96vw;
+        height: auto;
+    }
+
+    .homestays-container h3 {
+        font-size: 10px;
+        margin-top: 5em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .heading {
+        width: 90%;
+        text-align: center;
+        margin-top: 1.5em;
+        gap: 1em;
+        font-size: 15px;
+    }
+
+    /* 🔹 City box */
+    .City-container {
+        width: 95%;
+        height: 25vh;
+        padding: 1em;
+        border-radius: 10px;
+        background-color: #e7e4e4;
+        margin: 0;
+    }
+
+    .City-container h4 {
+        width: 66%;
+    }
+
+    .City-container select {
+        width: 40%;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 12px;
+        margin: 1em auto;
+        padding: 8px;
+        background-color: #efefef;
+        display: block;
+    }
+
+    .selectedcity {
+        font-size: 25px;
+        text-align: right;
+        margin: -0.5em 23px;
+    }
+
+    /* 🔹 Checkin + Checkout */
+    .checkin-container,
+    .checkout-container {
+        width: 95%;
+        height: 25vh;
+        padding: 1em;
+        border-radius: 10px;
+        background-color: #e7e4e4;
+        margin: 0;
+    }
+
+    .checkin-text,
+    .checkout-text {
+        font-size: 13px;
+        width: 20px;
+        font-weight: 600;
+    }
+
+
+
+    .checkin-button,
+    .checkout-button {
+        width: 52%;
+        margin: 0px 45px;
+        justify-content: space-between;
+    }
+
+    .selected-date-checkin,
+    .selected-date-checkout {
+        font-size: 13px;
+        width: 25vw;
+        text-align: center;
+        margin-top: 0.5em;
+        margin-left: 13em;
+    }
+
+    .react-datepicker {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* 🔹 Guest box */
+    .Guest-container {
+        width: 95%;
+        height: auto;
+        padding: 1em;
+        border-radius: 10px;
+        background-color: #e7e4e4;
+        margin: 0;
+    }
+
+    .main-button {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .guest-choice {
+        width: 95%;
+        height: auto;
+        margin: 1em auto;
+    }
+
+    .adult-row,
+    .child-row {
+        width: 80%;
+        gap: 1em;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .adult-row h2,
+    .child-row h2 {
+        font-size: 12px;
+        color: rgb(83, 80, 80);
+        margin: 0;
+    }
+
+    .adult-row select,
+    .child-row select {
+        width: 11vw;
+        height: 4vh;
+        margin-top: 0.5em;
+    }
+
+    .ageofchildren h3 {
+        font-size: 13px;
+        margin: 0.5em 15px;
+        text-align: left;
+    }
+
+    .child1,
+    .child2,
+    .child3,
+    .child4 {
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5em;
+    }
+
+    .child1 select,
+    .child2 select,
+    .child3 select,
+    .child4 select {
+        width: 14vw;
+        height: 4vh;
+    }
+
+    .btn {
+        width: 60%;
+        margin: 1em auto;
+        text-align: center;
+    }
+
+    /* 🔹 Price box */
+    .price-container {
+        width: 95%;
+        height: auto;
+        padding: 1em;
+        border-radius: 10px;
+        background-color: #e7e4e4;
+        margin: 0;
+    }
+
+    .price-button {
+                width: 53%;
+        margin: 0 -11px;
+        justify-content: space-between;
+    }
+
+    .price-container select {
+        width: 42%;
+        font-size: 14px;
+        margin: 1em auto;
+        display: block;
+    }
+
+    .selected-price-of-HSV {
+        text-align: right;
+        margin: 0.5em 0;
+    }
+
+    /* 🔹 Search button */
+    .home-stays-btn {
+        color: white;
+        background-color: #007bff;
+        padding: 10px 40px;
+        font-size: 14px;
+        border-radius: 8px;
+        margin: 1.5em auto;
+        display: block;
+        width: 70vw;
+    }
+
+    .home-stays-btn:hover {
+        background-color: #0056b3;
+    }
 
 }
