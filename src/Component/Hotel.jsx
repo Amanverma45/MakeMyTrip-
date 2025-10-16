@@ -16,8 +16,6 @@ const CheckOutButton = forwardRef(({ value, onClick }, ref) => (
   </button>
 ));
 
-
-
 const Hotel = () => {
   const [bookingType, setBookingType] = useState("Upto 4 Rooms");
   const [selectCity, setSelectCity] = useState("Mumbai, India");
